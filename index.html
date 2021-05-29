@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>so</title>
+    <link rel="shortcut icon" href="./je.jpg" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <a-scene>
+
+        <a-assets>
+            <a-asset-item id="arbol" src="./arbol.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-light position="23.54292 -4.84203 -97.85044" light="color: #5c0f8f; groundColor: #deade1; intensity: 0.66"
+            scale="0.5 0.5 1"
+            animation="property : position; to: -46.36119 -4.84203 -97.85044; dur: 2000; dir: alternate; easing: linear; loop: true">
+        </a-light>
+        <a-gltf-model src="#arbol" gltf-model="./arbol.gltf" scale="10 10 10" position="4.42718 -1.81391 -20.91006" animation="property: rotation; to: 0 360 0; loop: true; dur: 30000">
+        </a-gltf-model>
+        <a-light color="white" position="-0.52231 1.80192 3.74119" light="color: #cca171; intensity: 0.74"></a-light>
+        <a-assets>
+            <a-asset-item id="untitled" src="./untitled.gltf"></a-asset-item>
+
+        </a-assets>
+        <a-gltf-model src="#untitled" gltf-model="./untitled.gltf" scale=""></a-gltf-model>
+        
+
+
+        <a-gltf-model src="#caballo" gltf-model="./caballo.glb" position="10.94067 0 -3.45593" scale="0.2 0.1 0.1"></a-gltf-model>
+
+
+        <a-box src="./escultura 1 arbol.jpg" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-box>
+            <a-sphere src="./escultura 1 arbol.jpg" position="-2.97531 1.25 -5" radius="1.25" animation="property: rotation; to: 0 360 0; loop: NaN; dur: 10000" material="" geometry=""></a-sphere>
+        <a-cylinder src="./escultura 1 arbol.jpg" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000"></a-cylinder>
+        <a-dodecahedron src="./je.jpg" radius="5" position="-12.05222 8 -13.7854"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" material="" geometry="">
+        </a-dodecahedron>
+        <a-image src="./escultura 1 arbol.jpg" width="10" height="10" position="12.6869 17.2751 -3.82035"
+            scale="0.75305 0.64179 1.07819" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+            material="" geometry="" rotation="0 -60.66591726404183 0"></a-image>
+
+        <a-video src="pelo 2.mp4" width="3" height="2.5" position="10 7 3.3521" material="" geometry=""></a-video>
+
+        <a-sound src="" autoplay="true" position="0 2 5" volume="2">
+        </a-sound>
+
+        <a-entity
+            environment="horizonColor:#9c1616;groundColor2:#ec89bd;groundColor:#c7238b;lightPosition:-2.92 0.96 0.35;skyColor:#191a1a;groundTexture:walkernoise;flatShading:true;shadowSize:9.82;lighting:point;ground:canyon;dressingAmount:298;dressing:arches;active:true;seed:17;skyType:gradient;fog:0.8;groundYScale:20;dressingColor:#3cf7ed;dressingScale:0.2;dressingVariance:0.2 0.2 0.2;dressingOnPlayArea:1;gridColor:#239893;preset:dream"
+            preset-switcher="" id="environment" position="1.738 -0.193 0">
+            <a-entity class="environment" position="0 50 0"
+                light="color:#8c8c8c;intensity:0.6;groundColor:#c7238b;type:hemisphere"></a-entity>
+            <a-entity class="environment" position="-2.92 0.96 0.35"
+                light="shadowCameraLeft:-9.82;shadowCameraBottom:-9.82;shadowCameraRight:9.82;shadowCameraTop:9.82;intensity:0.6;type:point">
+            </a-entity>
+            <a-entity rotation="-90 0 0" class="environmentGround environment" scale="1 1 20"
+                shadow="cast:false;receive:false"></a-entity>
+            <a-entity class="environmentDressing environment"></a-entity>
+            <a-sky radius="200" theta-length="110" class="environment" geometry=""
+                material="npot:false;shader:gradientshader;topColor:#191a1a;bottomColor:#9c1616"></a-sky>
+            <a-entity id="stars" visible="false"></a-entity>
+        </a-entity>
+       
+    </a-scene>
+
+    </a-scene>
+
+
+
+</body>
+
+</html>
