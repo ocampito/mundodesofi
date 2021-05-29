@@ -1,2 +1,0 @@
-# mundodesofi
-mi mundo
